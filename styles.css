@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.card {
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,95%);
+    width: 50%;
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow:  0px 0px 8px rgba(0,0,0,0.1);
+}
+
+.image {
+    width: 40%;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.image img {
+    width: 120%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.details {
+    background: white;
+    width: 55%;
+    height: 280px;
+}
+
+.details div {
+    margin: 30px 0px 10px 40px;
+}
+
+.head-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.text {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 10px 0px;
+    color:hsl(214, 17%, 51%);
+}
+
+.bottom {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.avatar {
+    float: left;
+    margin-right: 15px;
+    width: 10%;
+    border-radius: 50%;
+}
+
+.bottom span:nth-child(2) {
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.bottom span:nth-child(4) {
+    font-weight: 500;
+    color: hsl(212, 23%, 69%);
+}
+
+.share {
+    background-color:hsl(210, 46%, 95%);
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 15px;
+}
+
+.share svg {
+    margin: 30%;
+}
+
+.share-tab {
+    background-color: hsl(217, 19%, 35%);
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+    color:  hsl(212, 23%, 69%);
+    font-size: 12px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 75.5%;
+    bottom: 55%;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.share-tab p:nth-child(1) {
+   padding: 5px;
+}
+
+.share-tab-mob {
+    background-color: hsl(217, 19%, 35%);
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+    color:  hsl(212, 23%, 69%);
+    font-size: 12px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 75.5%;
+    bottom: 55%;
+    padding: 0 20px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.share-tab-mob p:nth-child(1) {
+   padding: 5px;
+}
+
+.drop {
+    width: 15px;
+    height: 15px;
+    background-color:  hsl(217, 19%, 35%);
+    position: relative;
+    top: 50%;
+    right: 38%;
+    transform: rotate(45deg);
+    margin-left: -30px;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 1450px){
+
+    .share-tab {
+        width: 200px;
+        left: 77%;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .card {
+        width: 70%;
+    }
+
+    .share-tab {
+        width: 200px;
+        left: 75%;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .card {
+        width: 90%;
+    }
+
+    .share-tab {
+        width: 150px;
+        left: 78%;
+    }
+}
+
+@media screen and (max-width: 426px)
+{
+    .card {
+        width: 87%;
+        display: block;
+        margin-top: -50%;
+        border-radius: 10px;
+    }
+
+    .image {
+        width: 85%;
+        height: 80%;
+        border-radius: 10px;
+    }
+    
+    .image img {
+        width: 118%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .details {
+        background: white;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .details div {
+        margin: 0 30px;
+        padding-top: 30px;
+    }
+    .head-text {
+        font-size: 17px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .bottom {
+        padding-bottom: 20px;
+    }
+
+    .avatar {
+        width: 40px;
+    }
+
+    .share-tab {
+        display: none;
+    }
+
+    .share-tab-mob {
+        visibility: visible;
+        position: relative;
+        left: 0;
+        top: -25%;
+        width: 89%;
+        height: 70px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .shareMob {
+        background-color:hsl(212, 23%, 69%);
+        float: right;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: relative;
+        bottom: 0px;
+        margin-left: 80px;
+    }
+
+    .shareMob svg {
+        margin: 30%;
+    }
+    
+    .drop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .share-tab-mob {
+        width: 88%;
+    }
+
+    .shareMob {
+        margin-left: 40px;
+    }
+    
+
+}
